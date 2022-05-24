@@ -1,38 +1,31 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 0;
+  margin:0;
+  text-align: center;
+  font:400 17px/1.6 'Roboto';
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a { text-decoration: none; }
+header {
+  background:#ccc;
+  padding:10px;
 }
+button { border-radius: 10px; background:#333; color:white; border:none; padding:10px; text-transform: uppercase; letter-spacing: 1px; font:12px 'Roboto'; cursor: pointer; transition: .3s; }
+button svg { display: block; width: 100%; font-size:24px }
+button:hover { background-color: #999; }
+header nav { display: flex; justify-content: space-between; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.inputGp { max-width: 600px; margin:0 auto; }
+label { display: block; text-align: left; }
+textarea, input { border:.5 solid #333; padding:10px; width: 100%; margin-bottom: 20px; font:14px/1.5 "Roboto"}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loginPage {
+  width: 800px;
+  margin:0 auto;
+  background-color: #eee;
+  border-radius: 25px;
+  padding:80px 10px;
+  box-shadow: 0 0 10px #333;
 }
